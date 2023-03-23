@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WinFormsBlazor</title>
+    <base href="/" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="WinFormsBlazor.styles.css" rel="stylesheet" />
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+
+<div id="app">Loading...</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+
+<script src="_framework/blazor.webview.js"></script>
+<script>
+    function playVideo(source) {
+        var video = document.getElementById('video');
+        if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = source;
+            video.play();
+        } else
+        if (Hls.isSupported()) {
+            var hls = new Hls({
+                debug: true,
+            });
+            hls.loadSource(source);
+            hls.attachMedia(video);
+
+            hls.on(Hls.Events.ERROR, function (event, data) {
+                if (data.fatal) {
+                    switch (data.type) {
+                        case Hls.ErrorTypes.NETWORK_ERROR:
+                            // try to recover network error
+                            alert('fatal network error encountered, try to recover ' );
+                            hls.startLoad();
+                            break;
+                        case Hls.ErrorTypes.MEDIA_ERROR:
+                            alert('fatal media error encountered, try to recover');
+                            hls.recoverMediaError();
+                            break;
+                        default:
+                            // cannot recover
+                            alert('fatal error encountered, cannot recover');
+                            hls.destroy();
+                            break;
+                    }
+                }
+            });
+            hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+                video.muted = true;
+                video.play();
+            });
+        }
+    }
+</script>
+</body>
+
+</html>

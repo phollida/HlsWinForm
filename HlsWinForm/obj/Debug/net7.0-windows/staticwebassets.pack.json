@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pho\\source\\repos\\HlsWinForm\\HlsWinForm\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\pho\\source\\repos\\HlsWinForm\\HlsWinForm\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows\\staticwebassets\\msbuild.HlsWinForm.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows\\staticwebassets\\msbuild.build.HlsWinForm.props",
+      "PackagePath": "build\\HlsWinForm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows\\staticwebassets\\msbuild.buildMultiTargeting.HlsWinForm.props",
+      "PackagePath": "buildMultiTargeting\\HlsWinForm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows\\staticwebassets\\msbuild.buildTransitive.HlsWinForm.props",
+      "PackagePath": "buildTransitive\\HlsWinForm.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

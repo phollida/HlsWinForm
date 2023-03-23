@@ -1,5 +1,6 @@
 ﻿@inject IJSRuntime JSRuntime
 
+
 <div class="container" style="alignment: center">
     <h1>Hls.js demo - basic usage @source</h1>
     <video height="600" id="video" controls></video>
@@ -7,7 +8,12 @@
 </div>
 
 @code {
-    string source = "http://192.168.0.54:8080/video/out.m3u8";
+    string source = "";
+    
+    protected override void OnInitialized()
+    {
+        source = "http://127.0.0.1:8080/video/out.m3u8";
+    }
     private  void PlayVideo(object? state)
     {
         JSRuntime.InvokeVoidAsync("playVideo",  source);

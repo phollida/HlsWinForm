@@ -40,7 +40,7 @@
                     switch (data.type) {
                         case Hls.ErrorTypes.NETWORK_ERROR:
                             // try to recover network error
-                            alert('fatal network error encountered, try to recover ' );
+                            alert('fatal network error encountered, try to recover '+source );
                             hls.startLoad();
                             break;
                         case Hls.ErrorTypes.MEDIA_ERROR:

@@ -30,7 +30,7 @@
         var hls = new Hls({
             debug: true,
         });
-        hls.loadSource('http://192.168.0.54:8080/video/out.m3u8');
+        hls.loadSource('https://localhost:8443/hls/test/out.m3u8');
         hls.attachMedia(video);
         hls.on(Hls.Events.MEDIA_ATTACHED, function () {
             video.muted = true;

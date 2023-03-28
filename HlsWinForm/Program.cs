@@ -1,3 +1,4 @@
+
 namespace HlsWinForm;
 
 static class Program

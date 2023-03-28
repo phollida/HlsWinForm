@@ -32,7 +32,7 @@ public partial class Form1 : Form
         {
             var profile = webView21.CoreWebView2.Profile;
             await profile.ClearBrowsingDataAsync();
-            webView21.CoreWebView2?.Navigate("http://localhost:8080/video/");
+            webView21.CoreWebView2?.Navigate("https://localhost:8443/hls/test/out.m3u8");
         }
     }
 
@@ -67,7 +67,7 @@ public partial class Form1 : Form
         var hls = new Hls({
           debug: true,
         });
-        hls.loadSource('http://192.168.0.54:8080/video/out.m3u8');
+        hls.loadSource('https://localhost:8443/hls/test/out.m3u8');
         hls.attachMedia(video);
 		hls.on(Hls.Events.ERROR, function (event, data) {
                 if (data.fatal) {

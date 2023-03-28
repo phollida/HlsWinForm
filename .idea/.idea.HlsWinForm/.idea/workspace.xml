@@ -5,7 +5,15 @@
     <projectFile>WebViewWinForm/WebViewWinForm.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5915931e-9bdc-4889-b528-b6d4677551bb" name="Changes" comment="" />
+    <list default="true" id="5915931e-9bdc-4889-b528-b6d4677551bb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HlsWinForm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HlsWinForm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HlsWinForm/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HlsWinForm/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HlsWinForm/HlsVideo.razor" beforeDir="false" afterPath="$PROJECT_DIR$/HlsWinForm/HlsVideo.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HlsWinForm/HlsWinForm.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HlsWinForm/HlsWinForm.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HlsWinForm/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HlsWinForm/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HlsWinForm/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HlsWinForm/wwwroot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebViewWinForm/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebViewWinForm/Form1.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +28,6 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5976c28f6ab1eac11db2d558db7971d29bcbc664bca4474f2a237619b67b49/BlazorWebView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HlsWinForm/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HlsWinForm/Form1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HlsWinForm/HlsVideo.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -104,6 +111,8 @@
       <workItem from="1679527402079" duration="2323000" />
       <workItem from="1679530479024" duration="14291000" />
       <workItem from="1679606923660" duration="3476000" />
+      <workItem from="1679715525031" duration="6910000" />
+      <workItem from="1679878857358" duration="1803000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679542759158</created>
